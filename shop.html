@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Streetware!</title>
+<style type="text/css">
+* {
+  padding: 0px;
+  margin: 5px;
+}  
+body {
+  background-color: #f0ffff;
+  font-family: 'Georgia' sans-serif;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #800000;
+  margin-bottom: 2px;
+  text-shadow: 0px 10px 7px #000000;
+  text-decoration: overline underline;
+}
+input[type=text] {
+  width: 50%;
+  border: 3px solid #800000;
+  margin-top: 35px;
+  color: white;
+  font-size: 12px;
+  background-color: black;
+  background-repeat: no-repeat;
+  padding: 8px 40px 10px 30px;
+}
+ul {
+  list-style-type: none;
+  padding: 15px;
+  overflow: hidden;
+  margin-left: 12%;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  background-color: white;
+  border: 3px solid #800000;
+  color: #800000;
+  border-radius: 10px;
+  margin: 30px;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: underline;
+}
+li a:hover {
+  background-color: #ffa07a;
+}
+hr {
+  border: 8px solid #800000;
+  border-radius: 5px;
+}
+a    { text-decoration: none; }
+     .gallery {margin-left: 8%;}      
+    .box { width: 300px;
+           box-shadow: 2px 22px 30px #800000;  
+           border-radius: 5px;
+           overflow: hidden;
+           float: left;
+           margin: 10px 10px 10px 10px;
+           padding-right: 10px;
+           
+           }  
+    .slide-img { height: 450px;
+                 position: relative;}
+    .slide-img img { width: 100%; 
+                     height: 100%;
+                     object-fit: cover;
+                     box-sizing: border-box; }
+    .detail-box { width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 5px 15px;
+                  box-sizing: border-box;}
+    .type       { display: flex;
+                  flex-direction: column; }   
+    .type a    {color: #800000;
+                 margin: 5px 0px;
+                 font-weight: 800;
+                 letter-spacing: 0.5px;
+                 padding-right: 8px; 
+                 font-family: monospace; 
+                 font-size: 15px;}
+    .type span { color: grey; }
+    .price     { color: #800000;
+                 font-weight: 700;
+                 letter-spacing: 0.5; }
+    .overlay   { position: absolute;
+                 left: 50%; 
+                 top: 50%;
+                 transform: translate(-50%,-50%);
+                 width: 100%;
+                 height: 100%;
+                background-color: grey;
+                opacity: 0.8;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+    .button    { width: 160px;
+                 height: 40px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 background-color: white;
+                 color: #800000;
+                 font-weight: 600;
+                 letter-spacing: 1px;
+                 border-radius: 5px;
+                 box-shadow: 2px 2px 30px #800000 ;
+                 opacity: 100%;
+                 }                    
+    .button:hover { color: white;
+                 background-color: #800000;
+                 transition: all ease 0.6; }
+    .overlay { visibility: hidden; }
+    .slide-img:hover .overlay { visibility: visible;
+    animation: ease-in-out 0.5; }
+
+</style>
+</head>
+<body>
+  <h1>STREETWARE</h1>
+      <ul>
+            <li><a class="active" href="home.html"><b>HOME</b></a></li>
+            <li><a href="shop.html"><b>SHOP</b></a></li>
+            <li><a href="team.html"><b>TEAM</b></a></li>
+            <li><a href="about.html"><b>ABOUT</b></a></li>
+            <li><a href="reference.html"><b>REFERENCE</b></a></li>
+            <li>
+               <input type="text" name="search" placeholder="Search here...">
+            </li>
+         </ul>
+<hr>
+<div class="gallery">
+<div class="box">
+<div class="slide-img">
+<img src="1.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">GENETICALLY MODIFIED </a>
+<span>Box Tee Oversized</span>  
+</div>  
+<a href="#" class="price"> ₱ 3,000 </a>
+</div>
+</div>
+
+    
+<div class="box">
+<div class="slide-img">
+<img src="2.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">DOWN WITH MY DEMONS</a>
+<span>Heavy Tee</span>  
+</div>  
+<a href="#" class="price"> ₱ 4,000 </a>
+</div>
+</div>
+
+    
+<div class="box">
+<div class="slide-img">
+<img src="3.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">DANGEROUS MAN</a>
+<span>Heavy Tee Oversized</span>  
+</div>  
+<a href="#" class="price"> ₱ 4,500 </a>
+</div>
+</div>
+
+    
+<div class="box">
+<div class="slide-img">
+<img src="4.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">FRESHNISS</a>
+<span>Heavy Crew tee</span>  
+</div>  
+<a href="#" class="price"> ₱ 4,500 </a>
+</div>
+</div>
+
+    
+<div class="box">
+<div class="slide-img">
+<img src="5.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">DIMENSION </a>
+<span>Box Tee Oversized </span>  
+</div>  
+<a href="#" class="price"> ₱ 3,000 </a>
+</div>
+</div>
+
+    
+<div class="box">
+<div class="slide-img">
+<img src="6.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">HYPE MUGIWARA</a>
+<span>Heavy Crew tee</span>  
+</div>  
+<a href="#" class="price"> ₱ 4,500 </a>
+</div>
+</div>
+
+    
+<div class="box">
+<div class="slide-img">
+<img src="7.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">WITH ONLY HANDS</a>
+<span>Heavy Crew Tee</span>  
+</div>  
+<a href="#" class="price"> ₱ 4,500 </a>
+</div>
+</div>
+
+    
+<div class="box">
+<div class="slide-img">
+<img src="8.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">MODERNIZED DAVID </a>
+<span>Box Tee</span>  
+</div>  
+<a href="#" class="price"> ₱ 3,000 </a>
+</div>
+</div>
+
+    
+<div class="box">
+<div class="slide-img">
+<img src="9.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">SIMPLE STYLE</a>
+<span>Uni Tee Oversized</span>  
+</div>  
+<a href="#" class="price"> ₱ 3,000 </a>
+</div>
+</div>
+
+
+    
+<div class="box">
+<div class="slide-img">
+<img src="10.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">ESSENTIALS</a>
+<span>Crew Tee Oversized</span>  
+</div>  
+<a href="#" class="price"> ₱ 2,500 </a>
+</div>
+</div>
+
+<div class="box">
+<div class="slide-img">
+<img src="11.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">BAPE / UNDEFEATED</a>
+<span>Heavy Box Tee </span>  
+</div>  
+<a href="#" class="price"> ₱ 4,500 </a>
+</div>
+</div>
+
+<div class="box">
+<div class="slide-img">
+<img src="12.png">
+<div class="overlay">
+<a href="#" class="button">Buy Now</a>  
+</div>  
+</div>
+<div class="detail-box">
+<div class="type">
+<a href="#">GOOD SEX / BIG CHECKS</a>
+<span>Light Crew Tee</span>  
+</div>  
+<a href="#" class="price"> ₱ 2,500 </a>
+</div>
+</div>
+</div>
+</body>
+</html>
